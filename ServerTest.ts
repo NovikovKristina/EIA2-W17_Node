@@ -37,7 +37,7 @@ namespace ServerTest {
         _response.setHeader("Access-Control-Allow-Origin", "*");
         
         // Response-Body
-        _response.write("Ihre Bestellung wird verarbeitet und ist bald unterwegs.<br>Wir wuenschen schoene Feiertage :-)");
+        _response.write("Ihre Bestellung wird verarbeitet und ist bald unterwegs:" + "<br>" + "Bestellung" + "br");
 //        _response.write("Port: " + port + "<br>");
 //        _response.write("Method: " + _request.method + "<br>");
 //        _response.write("Url: " + _request.url + "<br>");
@@ -46,6 +46,9 @@ namespace ServerTest {
         // ?
         let query: AssocStringString = Url.parse(_request.url, true).query;
         // ?
+
+            
+        
         for (let key in query)
             console.log(key + ": " + query[key]);
         
