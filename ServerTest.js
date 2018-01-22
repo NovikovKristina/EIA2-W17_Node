@@ -36,10 +36,10 @@ var ServerTest;
         //        _response.write("Headers: " + _request.headers + "<br>");
         // ?
         let query = Url.parse(_request.url, true).query;
-        // ?
-        _response.write("<p>" + query["Bestellung"] + "</p>");
+        // ?             
         for (let key in query)
-            console.log(key + ": " + query[key]);
+            _response.write(key + ": " + query[key] + "<br>");
+        _response.write("Frohe Feiertage! :-)<br>");
         // Antwort abschlie�en und abschicken
         _response.end();
     }

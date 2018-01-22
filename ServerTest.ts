@@ -46,12 +46,12 @@ namespace ServerTest {
 
         // ?
         let query: AssocStringString = Url.parse(_request.url, true).query;
-        // ?
-
-        _response.write("<p>" + query["Bestellung"] + "</p>");                
+        // ?             
         
         for (let key in query)
-            console.log(key + ": " + query[key]);
+            _response.write(key + ": " + query[key] + "<br>");
+        
+        _response.write("Frohe Feiertage! :-)<br>");
         
         // Antwort abschlieﬂen und abschicken
         _response.end();
