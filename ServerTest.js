@@ -29,7 +29,7 @@ var ServerTest;
         // Header: ?
         _response.setHeader("Access-Control-Allow-Origin", "*");
         // Response-Body
-        _response.write("Ihre Bestellung wird verarbeitet und ist bald unterwegs:" + "<br>" + "Bestellung" + "br");
+        _response.write("Ihre Bestellung wird verarbeitet und ist bald unterwegs:<br>");
         //        _response.write("Port: " + port + "<br>");
         //        _response.write("Method: " + _request.method + "<br>");
         //        _response.write("Url: " + _request.url + "<br>");
@@ -37,6 +37,7 @@ var ServerTest;
         // ?
         let query = Url.parse(_request.url, true).query;
         // ?
+        _response.write("<h1>" + query["Baumart"] + "</h1>");
         for (let key in query)
             console.log(key + ": " + query[key]);
         // Antwort abschlie�en und abschicken
