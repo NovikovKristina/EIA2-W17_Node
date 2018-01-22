@@ -39,7 +39,6 @@ var ServerTest;
         // ?             
         for (let key in query)
             _response.write(key + ": " + query[key] + "<br>");
-        _response.write("Frohe Feiertage! :-)<br>");
         // Antwort abschlie�en und abschicken
         _response.end();
     }

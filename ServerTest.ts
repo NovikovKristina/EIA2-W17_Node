@@ -51,8 +51,6 @@ namespace ServerTest {
         for (let key in query)
             _response.write(key + ": " + query[key] + "<br>");
         
-        _response.write("Frohe Feiertage! :-)<br>");
-        
         // Antwort abschlieﬂen und abschicken
         _response.end();
     }
