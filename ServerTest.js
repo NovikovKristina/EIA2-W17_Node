@@ -37,7 +37,7 @@ var ServerTest;
         // ?
         let query = Url.parse(_request.url, true).query;
         // ?
-        _response.write("<h1>" + query["Baumart"] + "</h1>");
+        _response.write("<p>" + query["Bestellung"] + "</p>");
         for (let key in query)
             console.log(key + ": " + query[key]);
         // Antwort abschlie�en und abschicken
