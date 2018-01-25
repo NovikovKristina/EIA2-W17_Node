@@ -1,6 +1,6 @@
 /**
  * Simple server managing between client and database
- * @author: Jirka Dell'Oro-Friedl
+ * @author: Kristina Novikov
  */
 
 import * as Http from "http";
