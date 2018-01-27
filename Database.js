@@ -1,18 +1,18 @@
 "use strict";
 /**
  * Simple database insertion and query for MongoDB
- * @author: Kristina Novikov
+ * @author: Jirka Dell'Oro-Friedl
  */
 const Mongo = require("mongodb");
 console.log("Database starting");
 let databaseURL = "mongodb://localhost:27017";
-let databaseName = "mongo-database";
+let databaseName = "Test";
 let db;
 let students;
 if (process.env.NODE_ENV == "production") {
     //    databaseURL = "mongodb://username:password@hostname:port/database";
-    databaseURL = "mongodb://novikovk:EIA2Testpassword@ds213688.mlab.com:ds213688/mongo-database";
-    databaseName = "mongo-database";
+    databaseURL = "mongodb://testuser:testpassword@ds129532.mlab.com:29532/eia2";
+    databaseName = "eia2";
 }
 Mongo.MongoClient.connect(databaseURL, handleConnect);
 function handleConnect(_e, _db) {
