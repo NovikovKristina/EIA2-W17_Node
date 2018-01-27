@@ -11,7 +11,7 @@ let db;
 let students;
 if (process.env.NODE_ENV == "production") {
     //    databaseURL = "mongodb://username:password@hostname:port/database";
-    databaseURL = "https://mongodbrowser.herokuapp.com/?u=novikovk&p=EIA2Testpassword&a=ds213688.mlab.com:ds213688/mongo-database&n=mongo-database&c=collection1";
+    databaseURL = "mongodb://novikovk:EIA2Testpassword@ds213688.mlab.com:ds213688/mongo-database";
     databaseName = "mongo-database";
 }
 Mongo.MongoClient.connect(databaseURL, handleConnect);
